@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		C1219BBC22EADE050009D57F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1219BBB22EADE050009D57F /* AppDelegate.swift */; };
-		C1219BBE22EADE050009D57F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1219BBD22EADE050009D57F /* ViewController.swift */; };
+		C1219BBE22EADE050009D57F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1219BBD22EADE050009D57F /* BaseViewController.swift */; };
 		C1219BC122EADE050009D57F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1219BBF22EADE050009D57F /* Main.storyboard */; };
 		C1219BC322EADE060009D57F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1219BC222EADE060009D57F /* Assets.xcassets */; };
 		C1219BC622EADE060009D57F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1219BC422EADE060009D57F /* LaunchScreen.storyboard */; };
+		C1219BCE22EADE7A0009D57F /* RedContents.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1219BCD22EADE7A0009D57F /* RedContents.storyboard */; };
+		C1219BD022EAEA900009D57F /* BlueContents.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1219BCF22EAEA900009D57F /* BlueContents.storyboard */; };
+		C1219BD222EAEB4E0009D57F /* YellowContents.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1219BD122EAEB4E0009D57F /* YellowContents.storyboard */; };
+		C1219BD422EAEE2E0009D57F /* SlideNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1219BD322EAEE2E0009D57F /* SlideNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C1219BB822EADE050009D57F /* SlideMenu_storyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideMenu_storyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1219BBB22EADE050009D57F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C1219BBD22EADE050009D57F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C1219BBD22EADE050009D57F /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		C1219BC022EADE050009D57F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C1219BC222EADE060009D57F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1219BC522EADE060009D57F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1219BC722EADE060009D57F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1219BCD22EADE7A0009D57F /* RedContents.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RedContents.storyboard; sourceTree = "<group>"; };
+		C1219BCF22EAEA900009D57F /* BlueContents.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BlueContents.storyboard; sourceTree = "<group>"; };
+		C1219BD122EAEB4E0009D57F /* YellowContents.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = YellowContents.storyboard; sourceTree = "<group>"; };
+		C1219BD322EAEE2E0009D57F /* SlideNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +63,15 @@
 			isa = PBXGroup;
 			children = (
 				C1219BBB22EADE050009D57F /* AppDelegate.swift */,
-				C1219BBD22EADE050009D57F /* ViewController.swift */,
+				C1219BBD22EADE050009D57F /* BaseViewController.swift */,
 				C1219BBF22EADE050009D57F /* Main.storyboard */,
 				C1219BC222EADE060009D57F /* Assets.xcassets */,
 				C1219BC422EADE060009D57F /* LaunchScreen.storyboard */,
 				C1219BC722EADE060009D57F /* Info.plist */,
+				C1219BCD22EADE7A0009D57F /* RedContents.storyboard */,
+				C1219BCF22EAEA900009D57F /* BlueContents.storyboard */,
+				C1219BD122EAEB4E0009D57F /* YellowContents.storyboard */,
+				C1219BD322EAEE2E0009D57F /* SlideNavigationController.swift */,
 			);
 			path = SlideMenu_storyboard;
 			sourceTree = "<group>";
@@ -124,6 +136,9 @@
 			files = (
 				C1219BC622EADE060009D57F /* LaunchScreen.storyboard in Resources */,
 				C1219BC322EADE060009D57F /* Assets.xcassets in Resources */,
+				C1219BD222EAEB4E0009D57F /* YellowContents.storyboard in Resources */,
+				C1219BCE22EADE7A0009D57F /* RedContents.storyboard in Resources */,
+				C1219BD022EAEA900009D57F /* BlueContents.storyboard in Resources */,
 				C1219BC122EADE050009D57F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,8 +150,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1219BBE22EADE050009D57F /* ViewController.swift in Sources */,
+				C1219BBE22EADE050009D57F /* BaseViewController.swift in Sources */,
 				C1219BBC22EADE050009D57F /* AppDelegate.swift in Sources */,
+				C1219BD422EAEE2E0009D57F /* SlideNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +299,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 77P3HR8235;
 				INFOPLIST_FILE = SlideMenu_storyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +317,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 77P3HR8235;
 				INFOPLIST_FILE = SlideMenu_storyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
