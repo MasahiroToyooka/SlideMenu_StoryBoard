@@ -16,6 +16,11 @@
 		C1219BD022EAEA900009D57F /* BlueContents.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1219BCF22EAEA900009D57F /* BlueContents.storyboard */; };
 		C1219BD222EAEB4E0009D57F /* YellowContents.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1219BD122EAEB4E0009D57F /* YellowContents.storyboard */; };
 		C1219BD422EAEE2E0009D57F /* SlideNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1219BD322EAEE2E0009D57F /* SlideNavigationController.swift */; };
+		C1219BD922EE95FF0009D57F /* SideNavigationStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1219BD822EE95FF0009D57F /* SideNavigationStatus.swift */; };
+		C1219BDB22EE96620009D57F /* SlideNavigationButtonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1219BDA22EE96620009D57F /* SlideNavigationButtonType.swift */; };
+		C1219BDD22EEBB930009D57F /* RedContentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1219BDC22EEBB930009D57F /* RedContentsViewController.swift */; };
+		C1219BDF22EEC16B0009D57F /* YellowContentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1219BDE22EEC16B0009D57F /* YellowContentsViewController.swift */; };
+		C1219BE122EEC1B70009D57F /* BlueContentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1219BE022EEC1B70009D57F /* BlueContentsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +35,11 @@
 		C1219BCF22EAEA900009D57F /* BlueContents.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BlueContents.storyboard; sourceTree = "<group>"; };
 		C1219BD122EAEB4E0009D57F /* YellowContents.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = YellowContents.storyboard; sourceTree = "<group>"; };
 		C1219BD322EAEE2E0009D57F /* SlideNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideNavigationController.swift; sourceTree = "<group>"; };
+		C1219BD822EE95FF0009D57F /* SideNavigationStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideNavigationStatus.swift; sourceTree = "<group>"; };
+		C1219BDA22EE96620009D57F /* SlideNavigationButtonType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideNavigationButtonType.swift; sourceTree = "<group>"; };
+		C1219BDC22EEBB930009D57F /* RedContentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedContentsViewController.swift; sourceTree = "<group>"; };
+		C1219BDE22EEC16B0009D57F /* YellowContentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowContentsViewController.swift; sourceTree = "<group>"; };
+		C1219BE022EEC1B70009D57F /* BlueContentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueContentsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,18 +72,47 @@
 		C1219BBA22EADE050009D57F /* SlideMenu_storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				C1219BD722EE95DE0009D57F /* Enum */,
+				C1219BD622EDEA450009D57F /* StoryBoard */,
+				C1219BD522EDEA280009D57F /* ViewController */,
 				C1219BBB22EADE050009D57F /* AppDelegate.swift */,
-				C1219BBD22EADE050009D57F /* BaseViewController.swift */,
-				C1219BBF22EADE050009D57F /* Main.storyboard */,
 				C1219BC222EADE060009D57F /* Assets.xcassets */,
 				C1219BC422EADE060009D57F /* LaunchScreen.storyboard */,
 				C1219BC722EADE060009D57F /* Info.plist */,
+			);
+			path = SlideMenu_storyboard;
+			sourceTree = "<group>";
+		};
+		C1219BD522EDEA280009D57F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C1219BBD22EADE050009D57F /* BaseViewController.swift */,
+				C1219BD322EAEE2E0009D57F /* SlideNavigationController.swift */,
+				C1219BDC22EEBB930009D57F /* RedContentsViewController.swift */,
+				C1219BDE22EEC16B0009D57F /* YellowContentsViewController.swift */,
+				C1219BE022EEC1B70009D57F /* BlueContentsViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		C1219BD622EDEA450009D57F /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				C1219BBF22EADE050009D57F /* Main.storyboard */,
 				C1219BCD22EADE7A0009D57F /* RedContents.storyboard */,
 				C1219BCF22EAEA900009D57F /* BlueContents.storyboard */,
 				C1219BD122EAEB4E0009D57F /* YellowContents.storyboard */,
-				C1219BD322EAEE2E0009D57F /* SlideNavigationController.swift */,
 			);
-			path = SlideMenu_storyboard;
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		C1219BD722EE95DE0009D57F /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				C1219BD822EE95FF0009D57F /* SideNavigationStatus.swift */,
+				C1219BDA22EE96620009D57F /* SlideNavigationButtonType.swift */,
+			);
+			path = Enum;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,8 +189,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1219BE122EEC1B70009D57F /* BlueContentsViewController.swift in Sources */,
 				C1219BBE22EADE050009D57F /* BaseViewController.swift in Sources */,
 				C1219BBC22EADE050009D57F /* AppDelegate.swift in Sources */,
+				C1219BDD22EEBB930009D57F /* RedContentsViewController.swift in Sources */,
+				C1219BDB22EE96620009D57F /* SlideNavigationButtonType.swift in Sources */,
+				C1219BDF22EEC16B0009D57F /* YellowContentsViewController.swift in Sources */,
+				C1219BD922EE95FF0009D57F /* SideNavigationStatus.swift in Sources */,
 				C1219BD422EAEE2E0009D57F /* SlideNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

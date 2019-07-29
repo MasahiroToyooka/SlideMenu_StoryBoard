@@ -13,28 +13,42 @@
         <!--Base View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="BaseViewController" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" customClass="BaseViewController" customModule="SlideMenu_storyboard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dRH-P5-3Eq">
-                                <rect key="frame" x="0.0" y="44" width="311" height="818"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dRH-P5-3Eq">
+                                <rect key="frame" x="0.0" y="20" width="260" height="876"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="H5g-Wt-hQ3"/>
+                                </constraints>
                                 <connections>
-                                    <segue destination="HyD-oo-YHf" kind="embed" id="9AN-Ym-STg"/>
+                                    <segue destination="HyD-oo-YHf" kind="embed" identifier="connectSideNavigationContainer" id="9AN-Ym-STg"/>
                                 </connections>
                             </containerView>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Tq-hZ-tcI">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Tq-hZ-tcI">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </containerView>
-                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vCR-Eh-LZ8">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vCR-Eh-LZ8">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3Tq-hZ-tcI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7lt-F4-KCq"/>
+                            <constraint firstItem="dRH-P5-3Eq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="93R-uq-ktz"/>
+                            <constraint firstItem="dRH-P5-3Eq" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="BcY-ne-mWQ"/>
+                            <constraint firstItem="vCR-Eh-LZ8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KcI-jb-1ti"/>
+                            <constraint firstItem="vCR-Eh-LZ8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Nr5-kq-6OH"/>
+                            <constraint firstItem="3Tq-hZ-tcI" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="XZA-Ze-PEb"/>
+                            <constraint firstItem="vCR-Eh-LZ8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="bVP-Og-Pkn"/>
+                            <constraint firstItem="dRH-P5-3Eq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" symbolic="YES" id="bxd-qO-L7o"/>
+                            <constraint firstItem="vCR-Eh-LZ8" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="fu4-GK-yPJ"/>
+                            <constraint firstItem="3Tq-hZ-tcI" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="oqC-sm-YMN"/>
+                            <constraint firstItem="3Tq-hZ-tcI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="r0S-oJ-zgl"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
@@ -43,7 +57,6 @@
                         <outlet property="wrapperButton" destination="vCR-Eh-LZ8" id="h8h-vK-hfH"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
@@ -52,23 +65,30 @@
             <objects>
                 <viewController id="HyD-oo-YHf" customClass="SlideNavigationController" customModule="SlideMenu_storyboard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Paf-dF-ULe">
-                        <rect key="frame" x="0.0" y="0.0" width="311" height="818"/>
+                        <rect key="frame" x="0.0" y="0.0" width="260" height="876"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="hq5-Dj-wfZ">
-                                <rect key="frame" x="0.0" y="244" width="311" height="340"/>
+                                <rect key="frame" x="0.0" y="244" width="260" height="398"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IeS-yz-f4n">
-                                        <rect key="frame" x="0.0" y="0.0" width="311" height="170"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="260" height="132.5"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                        <state key="normal" title="RedContantsを表示">
+                                        <state key="normal" title="RedContants">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tdM-D9-OTB">
-                                        <rect key="frame" x="0.0" y="170" width="311" height="170"/>
+                                        <rect key="frame" x="0.0" y="132.5" width="260" height="133"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                        <state key="normal" title="BlueContantsを表示">
+                                        <state key="normal" title="BlueContants">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vwK-vj-xZG">
+                                        <rect key="frame" x="0.0" y="265.5" width="260" height="132.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                        <state key="normal" title="YellowContents">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
@@ -87,11 +107,12 @@
                     <connections>
                         <outlet property="blueContantsButton" destination="tdM-D9-OTB" id="cdk-UW-zZl"/>
                         <outlet property="redContantsButton" destination="IeS-yz-f4n" id="XIN-Bf-WR0"/>
+                        <outlet property="yellowContentsButton" destination="vwK-vj-xZG" id="HuC-8y-XXx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3bq-MG-6aP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="895" y="463"/>
+            <point key="canvasLocation" x="922" y="138"/>
         </scene>
     </scenes>
 </document>
